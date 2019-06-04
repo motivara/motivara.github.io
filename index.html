@@ -1,0 +1,103 @@
+<meta content="text/html; charset=utf-8" http-equiv=Content-Type>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="copyright" content="Copyright © 2019 Motivara Corporation">
+  <link rel="stylesheet" href="normalize.css"> <!-- reset styles -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"> <!-- hamburger icon -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet"> <!-- main font -->
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet"> <!-- masthead font -->
+  <link rel="stylesheet" type="text/css" href="style.css"> <!-- web page styles -->
+
+<body id="home">
+  <div class="masthead">&nbsp;
+  </div>
+
+
+
+
+
+
+
+  <!-- INTRODUCTION -->
+
+  <!-- img src="images/blue-sliver.png" -->
+  
+  <p class="intro"><span class="boldDesc">design + development</span><br>
+
+
+Established in 2004, Motivara is a design and development firm based in Redmond, Washington.<br>
+<br>
+Consulting services include: software design, responsive websites, graphics, ux | ui, visual design, brand identity, full-stack development, and database optimization.<br>
+<br>
+Each project is led by an expert team consisting of a principal designer and a computer scientist. Let us help you achieve your business goals.</p>
+
+
+
+
+
+
+  <!-- SERVICES or portfolio -->  
+
+  <!-- Cards are placed into this div programmatically --> 
+  <div id="wrapper"> 
+  </div>
+
+
+
+
+
+  
+
+
+
+  <!-- CONTACT -->
+
+  <span id="contact" class="gap">&nbsp;</span>
+  <div class="titlerole pushme">CONTACT</div>
+  <p class="mainp"><span class="boldDesc">Email:</span> info at motivara dot com<br></p>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- FOOTER -->
+
+  <p class="mainp" style="font-size: 0.8em; padding-top:30px; "><br>&copy; 2019 Motivara Corporation</p>
+
+
+
+
+
+
+
+  <!-- NAVIGATION -->
+
+  <span id="end" class="gap">&nbsp;</span>
+  <!-- Navigation is fixed to the top of the web page.
+       The div is placed at the end of the DOM flow to render 
+       above all other objects. To further assist, the 
+       z-index for the topnav class is set to 1000.
+  -->
+    <div class="topnav" id="myTopnav">
+      <a href="#home" class="nf active" onclick="toggleOff()"><div id="logo"><img src="images/Motivara.PNG" alt="Motivara"></div><br></a>
+      <div class="r">
+        <a href="#wrapper" onclick="toggleOff()" style="padding-right:8px;padding-left:16px;">Services</a>
+        <a href="#contact" style="padding-left:16px;" onclick="toggleOff()">Contact</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="toggle()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+
+
+  <!-- CODE -->
+
+  <script type="text/javascript" src="cards.js"></script> <!-- card system code -->
+  <script type="text/javascript" src="script.js"></script> <!-- navigation code -->
+</body>
