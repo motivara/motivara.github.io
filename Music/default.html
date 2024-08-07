@@ -4,7 +4,7 @@
   <title>Motivara Music</title>
   <meta content="text/html; charset=utf-8" http-equiv=Content-Type>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="copyright" content="Copyright © 2022 Motivara Corporation">
+  <meta name="copyright" content="Copyright © 2024 Motivara Corporation">
   <!--
     Design and development by:
     Principal designer: Alyce N. Hoggan
@@ -104,7 +104,7 @@ All rights reserved.</font></span></td>
 
 <script>//begin
 
-var mySound=[], playing=false, curTrack=0;
+var mySound=[], playing=false, curTrack=0, progress=0;
 function preload() {
   mySound.push(loadSound('rareEntity/Mode/rareEntity-mode-01.mp3'));
   mySound.push(loadSound('rareEntity/Mode/rareEntity-mode-02.mp3'));
@@ -127,7 +127,7 @@ function setup(){
 }
 function draw() {
   background(0);
-	progress = mySound[curTrack].currentTime() / mySound[curTrack].duration();
+  progress = mySound[curTrack].currentTime() / mySound[curTrack].duration();
   if(mouseX>0 && mouseY>0 && mouseX<200 && mouseY<300) {
     fill(30);
     rect(0,floor(mouseY/25)*25, 200,25);
